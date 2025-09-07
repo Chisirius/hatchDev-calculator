@@ -1,0 +1,13 @@
+.display{
+    width:200px;
+    height:20px;
+    background-color: rgba(214, 226, 228, 0.787);
+    color:black;
+    padding:10px;
+}
+
+.display-content{
+    display: flex;
+    float: inline-end;
+}
+

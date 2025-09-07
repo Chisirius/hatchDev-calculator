@@ -1,0 +1,16 @@
+body{
+    background-color: white;
+    margin: auto;
+    display:flex;
+  justify-content: center;
+}
+    
+.calc{ 
+    border: 2px solid purple;
+    background-color: rgb(221, 187, 221);
+    width: 220px;
+    height: 270px;
+    padding:30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+}
