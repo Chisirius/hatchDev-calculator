@@ -1,13 +1,23 @@
 .display{
     width:200px;
-    height:20px;
+    min-height:20px;
     background-color: rgba(214, 226, 228, 0.787);
     color:black;
-    padding:10px;
+    padding:7px 10px;
+    margin-bottom: 10px;
+    
+   
 }
 
 .display-content{
     display: flex;
-    float: inline-end;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
 }
-
+.displayResult{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}

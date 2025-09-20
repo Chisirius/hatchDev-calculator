@@ -2,14 +2,18 @@ import Button from "./button"
 
 interface digitProps{
     onDigit:(digit:string)=>void
+    onHandleClear:()=>void
+    onHandleBackspace:()=>void
+    onHandleCalculate:()=>void
 }
 
-function Keypad({onDigit}:digitProps){
-    const digits=["7",
-    "8", "9","/",
-    "4", "5","6", "*",
-    "1", "2", "3","-", 
-    "0",".","+",]
+function Keypad({onDigit, onHandleClear, onHandleBackspace, onHandleCalculate}:digitProps){
+    const digits=[
+    "7","8", "9", "C", 
+    "4", "5","6",  "/",
+    "1", "2", "3", "*",
+    "0", "00",  "-", "+",
+    "AC", ".", "=", ]
 
     return(
         <div>
@@ -18,8 +22,11 @@ function Keypad({onDigit}:digitProps){
             key={dig} 
             label={dig} 
             onDigit={onDigit}
-            id={dig}/> 
-            
+            id={dig}
+            onHandleClear={onHandleClear}
+            onHandleBackspace={onHandleBackspace}
+            onHandleCalculate={onHandleCalculate}
+            /> 
             ))}
 
            
